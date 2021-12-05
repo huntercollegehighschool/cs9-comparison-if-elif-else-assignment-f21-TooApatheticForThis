@@ -24,13 +24,22 @@ not a month
 
 #start writing your code below
 
+
+
+
+
+
 month = input("Enter a month of the year: ")
 
-if month == ("January" or "March" or "May" or "July" or "August" or "October" or "December"):
+months31 = ("January","March","May","July","August", "October","December")
+
+months30 = ("April","June","September","November")
+
+if month in months31:
   print("This month has 31 days.")
-elif month == ("April" or "June" or "September" or "Novermber"):
+elif month in months30:
   print("This month has 30 days.")
 elif month == ("February"):
-  print("This month usually has 28 days, but sometimes it has 29.")
+  print("This month has 28 or 29 days.")
 else:
   print("That is not a month.")
